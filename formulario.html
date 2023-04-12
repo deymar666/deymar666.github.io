@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Formulario de registro</h1>
+    <form class="formulario" action="destino.php" method="POST" novalidate>
+        
+        <fieldset>
+            <legend>Tus Datos</legend>
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+            <label>Apellido</label>
+            <input type="text" name="apellido" placeholder="Escribe tu apellido" required>
+            <br>
+            <label>Genero</label>
+            <br>
+            <input type="radio" name="genero" value="M" checked>Masculino<br>
+            <input type="radio" name="genero" value="F">Femenino<br>
+            <input type="submit" value="Enviar Datos">
+
+            <br>
+            <label>Ciudad de nacimiento</label>
+            <select name="ciudad">
+                <option value="CBBA">COCHABAMBA</option>
+                <option value="LPZ">LA PAZ</option>
+                <option value="SCZ">SANTA CRUZ</option>
+            </select>
+            <br>
+            <input type="checkbox" name="lenguaje1" value="HTML"checked>HTML<br>
+            <input type="checkbox" name="lenguaje2" value="CSS">CSS<br>
+            <input type="checkbox" name="lenguaje3" value="JS">JavaScript<br>
+            <BR>
+                <h1>Color favorito</h1>
+                <fieldset>
+                    <legend>Selecciona tu color favorito</legend>
+                    <input type="color" name="color">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Fechas</legend>
+                    <label>Selecciona la fecha de tu nacimiento</label><br>
+                    <input type="date"name="nacimiento"><br>
+                    <br>
+                    <label>Este año que fecha es tu cumple?</label>
+                    <input type="date"name="cumple"min="2023-01-01"max="2023-12-31"value="2023-04-01">
+                    <br>
+                    <label>Selecciona la fecha y hora de t examen</label>
+                    <input type="datetime-local"name="fechaexamen"><br>
+                    <br>
+                    <label>Que mes deseas empezar clases</label>
+                    <input type="month"name="mes"><br>
+
+                    <br>
+                    <label >En que horario desea tomar el curso</label>
+                    <input type="time" name="horaIngreso" value="08:00"><br>
+
+                    <label >que semana deseas tomar vacaciones</label>
+                    <input type="week" name="vacaciones" ><br>
+                  
+
+
+                </fieldset>
+                <br>
+                <label>email</label><br>
+                <input type="email" name="correo" placeholder="Ingresa tu email" required><br>
+                <label >web</label>
+                <input type="url" name="sitioweb" placeholder="wwww.domnio.com" required><br>
+                <label >Cuanto sabes de HTML</label>
+                <input type="range" name="saberhtml" min="0" max="10"><br>
+                <br>
+                <label >Cuanto sabes de HTML</label>
+                <input type="number" name="saberhtml5" min="0" max="10" value="6"><br>
+                <br>
+                <label >Password</label>
+                <input type="password" name="clave" placeholder="Escribe tu clave">
+
+
+            <input type="submit" value="Enviar Datos">
+            <br>
+            <button type="reset">Borrar</button>
+            <button type="submit">ENVIAR DATOS</button>
+            
+        </fieldset>
+    </form>
+    <a href="destino.php?prod=14&fecha=29032023">click aqui para enviar Datos</a>
+</body>
+</html>
